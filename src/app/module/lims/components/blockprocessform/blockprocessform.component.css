@@ -1,0 +1,33 @@
+.informationlabel {
+  background-color: #f0eef0;
+  padding: 3px;
+}
+.informationlabeltext {
+  margin: 0;
+  margin-left: 4px;
+}
+table {
+  width: 100%;
+}
+kendo-grid {
+  width: 100%;
+}
+.submitform {
+  width: 100px;
+  background-color: rgb(221, 221, 221);
+  color: black;
+  padding: 0px;
+  /* border-radius: 8%; */
+}
+.submitform:hover {
+  background-color: #0f9fbf;
+  color: white;
+}
+kendo-grid {
+  font-size: 10px;
+  width: 100%;
+}
+input.form-check-input {
+  width: 18px;
+  height: 18px;
+}

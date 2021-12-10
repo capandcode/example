@@ -1,0 +1,98 @@
+<!-- <div class="bglogin">
+    <img class="img-fluid" src="./assets/background/LRLabChrisJez.jpg" alt="">
+    <div class="center">
+        <img class="img" src="./assets/background/limsbgimg.png" alt="">
+    </div>
+</div> -->
+<html lang="en">
+  <body class="c">
+    <div class="c1">
+      <form >
+        <div class="container-fluid">
+          <div class="row align-self-start">
+            <div class="col-md-6 col-lg-6 col-sm-12 text-lg-start text-left">
+              <div class="container">
+                <div>
+                  <div class="form-group">
+                    <label for="lbl_user">User Login</label>
+                  </div>
+                </div>
+
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="id-database"
+                    aria-label="Floating label select example" [(ngModel)]="selectdb" name="selectdb"
+                  >
+                    <option value="0">Select Database</option>
+                    <option value="1">DXCAPPCHE841 server</option>
+                    <option value="2">DXCAPPCHE842 server</option>
+                  </select>
+                  <label for="floatingSelect">Database</label><br />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Username"
+                    id="id-Username"
+                    [(ngModel)]="username" name="username"
+                  /><br />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="Password"
+                    placeholder="Password"
+                    id="id-Password"
+                    [(ngModel)]="password" name="password"
+                  />
+                </div>
+
+                <div class="d-flex float-right justify-content-end">
+                  <span class="align-self-end">
+                    <a href="#" style="margin: left -130px; color: yellowgreen"
+                      >Forgot password?</a
+                    >
+                  </span>
+                </div>
+                <button
+                  type="submit"
+                  (click)="onSubmit()"
+                  class="btn btn-dark"
+              
+                  id="btnsave"
+                >
+                  LOGIN
+                </button>
+                <button
+                  class="btn btn-dark"
+                  (click)="clearFields()"
+                  id="btnclear"
+                >
+                  CLEAR
+                </button>
+              </div>
+            </div>
+            <div
+              class="
+                col-md-6 col-lg-6 col-sm-12
+                mt_eght
+                text-lg-end text-center
+                align-self-end
+              "
+              style="padding-right: 30px"
+            >
+              <span style="color: white">Version.1.0.0.0</span><br />
+              <span style="color: white">Workstation:UNKNOWN</span>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br><br>
+    </div>
+  </body>
+</html>
+

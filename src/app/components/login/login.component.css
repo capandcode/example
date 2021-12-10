@@ -1,0 +1,84 @@
+.c {
+  background-image: url("/assets/LRLabChrisJez.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%;
+}
+
+.form-control {
+  background-color: transparent;
+  color: white;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+input{
+  color: white;
+}
+label{
+  color:white;
+}
+
+::placeholder { 
+  color: white;
+}
+.form-select {
+  background-color: transparent;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.form-group {
+  color: white;
+  font-size: 25px;
+}
+.btn {
+  background-color: #e7e7e7;
+  color: black;
+}
+.form-select:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.c1 {
+  text-align: center;
+  margin: auto;
+  width: 850px;
+  padding-top: 20%;
+  background-image: url("/assets/limsbgimg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login_form{
+  margin: 0;
+  width: 200px;
+  /* color: rgb(194, 193, 193); */
+  /* background-color: green; */
+  
+}
+s{
+  background-color: red ;
+}
+/* mat-label{
+  color: white;
+}
+input{
+  color: white;
+} */
+.mat-form-field-label{
+
+  color:red !important;
+
+}
+
+.mat-form-field-underline{
+
+  background-color:red !important;
+
+}

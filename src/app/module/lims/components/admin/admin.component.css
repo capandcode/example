@@ -1,0 +1,39 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+/* mat-form-field{
+        height: 100px !important;;
+    } */
+/* .matselect {
+    height: 10px;
+    width: 200px ;
+    padding: 0px;
+    background-color: none;
+  } */
+select {
+  width: 200px;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.sidenav-content {
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 10px;
+}
+.lang-btn {
+  background-color: #0f9fbf;
+}
+.func-btn {
+  /* top: 5px; */
+  color: #9b999b;
+  padding: 0;
+  width: 30px;
+  font-size: 10px;
+}
+mat-icon{
+  /* top: ; */
+  font-size: 20px;
+}

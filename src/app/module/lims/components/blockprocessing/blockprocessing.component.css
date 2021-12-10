@@ -1,0 +1,30 @@
+.row{
+  margin: 0;
+}
+div {
+  background-color: #0f9fbf;
+  padding: 10px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7ecee5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0rem 0.1rem;
+  font-size: 5px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

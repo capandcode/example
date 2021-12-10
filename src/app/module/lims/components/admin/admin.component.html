@@ -1,0 +1,141 @@
+<mat-sidenav-container class="sidenav" fullscreen>
+  <mat-sidenav #sidenav class="sidenav-content" mode="over">
+    <button mat-button routerLink="blockprocessing">block processing</button>
+    <button mat-button routerLink="/admin">go home</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        (click)="sidenav.toggle()"
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span><img src="./assets/logo/dedaluslogo.png" alt="logo" /></span>
+      <div class="d-flex flex-column">
+        <div class="col">
+          <select name="" id="">
+            <option *ngFor="let lab of labs" value="lab.value">
+              {{ lab.value }}
+            </option>
+          </select>
+          <!-- <mat-form-field class="matselect" appearance="fill">
+        <mat-label>Favorite lab</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let lab of labs" [value]="lab.value">
+            {{ lab.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+        </div>
+        <div class="col">
+          <select name="" id="">
+            <option value="">ss</option>
+          </select>
+          <!-- <mat-form-field class="matselect" appearance="fill">
+        <mat-label>Favorite lab</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let lab of labs" [value]="lab.value">
+            {{ lab.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+        </div>
+      </div>
+      <span class="example-spacer"></span>
+      <button
+        color="primary"
+        mat-raised-button
+        class="lang-btn me-2"
+        aria-label="Example icon-button with heart icon"
+      >
+        ENG
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="lang-btn me-2"
+        aria-label="Example icon-button with heart icon"
+      >
+        RUBL
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="lang-btn me-2"
+        aria-label="Example icon-button with heart icon"
+      >
+        PMRG
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="lang-btn me-2"
+        aria-label="Example icon-button with heart icon"
+      >
+        RES
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="lang-btn me-2"
+        aria-label="Example icon-button with heart icon"
+      >
+        USERDB
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="more"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="Notification"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="Bookmarks"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>collections_bookmark</mat-icon>
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="Message"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>message</mat-icon>
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="Home"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>home</mat-icon>
+      </button>
+      <button
+        class="btn func-btn"
+         matTooltip="Info"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>info</mat-icon>
+      </button>
+      <button
+        [routerLink]="['/']"
+        class="btn func-btn"
+         matTooltip="Logout"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>logout</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

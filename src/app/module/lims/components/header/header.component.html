@@ -1,0 +1,103 @@
+<mat-sidenav-container class="example-container" fullscreen>
+  <mat-sidenav #sidenav class="example-sidenav" mode="over">
+    I'm a sidenav 
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        (click)="sidenav.toggle()"
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span><img src="./assets/logo/dedaluslogo.png" alt="logo" /></span>
+      <div class="d-flex flex-column">
+        <div class="col">
+          <select name="" id="">
+            <option *ngFor="let lab of labs" value="lab.value">
+              {{ lab.value }}
+            </option>
+          </select>
+          <!-- <mat-form-field class="matselect" appearance="fill">
+        <mat-label>Favorite lab</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let lab of labs" [value]="lab.value">
+            {{ lab.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+        </div>
+        <div class="col">
+          <select name="" id="">
+            <option value="">ss</option>
+          </select>
+          <!-- <mat-form-field class="matselect" appearance="fill">
+        <mat-label>Favorite lab</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let lab of labs" [value]="lab.value">
+            {{ lab.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+        </div>
+      </div>
+      <span class="example-spacer"></span>
+      <button
+        color="primary"
+        mat-raised-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        ENG
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        RUBL
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        PMRG
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        RES
+      </button>
+      <button
+        color="primary"
+        mat-raised-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        USERDB
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>notifications</mat-icon>
+      </button>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
